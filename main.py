@@ -1,3 +1,6 @@
+import calendar
+from datetime import datetime
+
 pet_type = "Cat"
 pet_name = "bob"
 print(f"I have a {pet_type} and his name is {pet_name}.")
@@ -19,6 +22,8 @@ print(f"Your average monthly savings is ${savings/12}")
 
 
 
+secs_in_month = calendar.monthrange(datetime.now().year,datetime.now().month)[1] * 24 * 60 * 60
+print(f"Seconds in the current month: {secs_in_month}")
 
 
 
